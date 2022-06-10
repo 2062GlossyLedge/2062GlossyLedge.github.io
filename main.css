@@ -1,0 +1,86 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "title title"
+    ". directory"
+    "bio picture"
+    "footer footer"
+}
+
+.title {
+    color: white;
+    grid-area: title;
+    font-size: 10vw;
+    border: 3px solid black;
+    border-bottom: 5px dashed steelblue;
+    background-image: url(Galaxy.jpg);
+    /* max-width: 100%; needs img tag */
+    background-size: cover
+    
+}
+.directory {
+    grid-area: directory;
+    width: 100px;
+    border: 3px solid rgb(61, 42, 42);
+    padding-bottom: 0px;
+    justify-self: right;
+   
+}
+.bio {
+    text-align: center;
+    grid-area: bio;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 1em;
+    margin: 3px;
+    
+}
+.picture {
+    grid-area: picture;
+    border: 3px solid black;
+    border-radius: 1em;
+    margin: 3px;
+}
+.footer {
+    grid-area: footer;
+    width: 500px;
+    justify-self: center;
+    /* border: 3px solid black; */
+}
+ul {
+    background-color: #eeeeee;
+    border: 5px solid steelblue;
+    padding: 2em;
+    border-radius: 1em;
+  }
+
+  img[src="picture.jpg"] {
+      display: block;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    
+      max-width: 200px;
+  }
+
+  /* a:link,
+  a:visited {
+    color: #fb6542;
+  }
+
+  a:hover {
+    text-decoration: none;
+  } */
+
+
+
+/* .grid div:nth-child(even) {
+    background-color: aqua;
+}
+.grid div:nth-child(odd) {
+    background-color: green;
+} */
+
