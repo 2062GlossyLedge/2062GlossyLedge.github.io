@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: 
+    "directory"
+    "project1"
+    "project2"
+    "project3"
+}
+
+.title {
+    color: white;
+    border-bottom: 10px solid white;
+    font-size: 50px;
+}
+
+.directory {
+    color: white;
+    border: 3px solid white;
+    width: 100px;
+    padding-bottom: 0px;
+    justify-self: right;
+    text-align: center;
+}
+
+div[class^="project"] {
+    color: white;
+    border: 3px solid white;
+    font-size: 50px;
+    margin: 15px;
+    height: 400px
+  
+
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    width: 50%;
+}
+
+iframe {
+   position: absolute;
+   right: 200px;
+   top: 200px;
+   width: 500px;
+   height: 200px;
+}
+
+.project1{
+    color: white;
+}

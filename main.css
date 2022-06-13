@@ -1,20 +1,25 @@
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "title title"
-    ". directory"
-    "bio picture"
-    "footer footer"
+body {
+    background-color: black;
 }
+
+.grid {
+    background-color: black;
+        display: grid;
+        /* margin: 0; */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "title title"
+            ". directory"
+            "bio picture"
+            "footer footer"
+        }
 
 .title {
     color: white;
     grid-area: title;
     font-size: 10vw;
     border: 3px solid black;
-    border-bottom: 5px dashed steelblue;
     background-image: url(Galaxy.jpg);
     /* max-width: 100%; needs img tag */
     background-size: cover
@@ -23,23 +28,26 @@
 .directory {
     grid-area: directory;
     width: 100px;
-    border: 3px solid rgb(61, 42, 42);
+    border: 3px solid steelblue;
     padding-bottom: 0px;
     justify-self: right;
+    text-align: center;
+    /* margin: 10px; */
    
 }
 .bio {
+    color: white;
     text-align: center;
     grid-area: bio;
     height: 300px;
-    border: 3px solid black;
+    border: 3px solid steelblue;
     border-radius: 1em;
     margin: 3px;
     
 }
 .picture {
     grid-area: picture;
-    border: 3px solid black;
+    border: 3px solid steelblue;
     border-radius: 1em;
     margin: 3px;
 }
@@ -50,7 +58,8 @@
     /* border: 3px solid black; */
 }
 ul {
-    background-color: #eeeeee;
+    color: white;
+    background-color: black;
     border: 5px solid steelblue;
     padding: 2em;
     border-radius: 1em;
@@ -58,13 +67,15 @@ ul {
 
   img[src="picture.jpg"] {
       display: block;
-      object-fit: cover;
+      /* background-size: contain; */
       margin-left: auto;
       margin-right: auto;
       width: 50%;
     
       max-width: 200px;
   }
+
+
 
   /* a:link,
   a:visited {
