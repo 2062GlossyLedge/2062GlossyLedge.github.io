@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    margin: 0px;
 }
 
 .grid {
@@ -119,7 +120,7 @@ ul {
 
   ul > div {
     position: relative;
-    left: 350px;
+    left: 25%;
     width: 50%;
     text-align: center;
     font-size: larger;

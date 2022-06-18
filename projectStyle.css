@@ -14,7 +14,7 @@ body {
 
 .title {
     color: white;
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid steelblue;
     font-size: 5vw;
 }
 
@@ -25,6 +25,10 @@ body {
     padding-bottom: 0px;
     justify-self: right;
     text-align: center;
+}
+
+a {
+    color: white;
 }
 
 div[class^="project"] {
@@ -38,7 +42,7 @@ div[class^="project"] {
 }
 
 p {
-    color: white;
+    color: steelblue;
     font-size: 2vw;
 
 }
@@ -46,8 +50,8 @@ p {
 iframe {
   position: relative;
   margin: 10px;
-  width: 40vw;
-  float: right;
+  width: 20vw;
+  left: 0%;
 
 }
 
@@ -55,4 +59,16 @@ iframe {
     color: white;
 
    
+}
+
+img[src="TowerDefense.png"] {
+    position: relative;
+    width: 25%;
+    max-height: 170px;
+}
+
+img[src="GrammarEx.png"] {
+    position: relative;
+    width: 25%;
+    max-height: 170px;
 }
