@@ -6,23 +6,24 @@ body {
     background-color: black;
         display: grid;
         /* margin: 0; */
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 500px;
         grid-template-rows: 1fr;
         grid-template-areas:
             "title title"
             ". directory"
             "bio picture"
+            "LN LN "
             "footer footer"
         }
 
 .title {
     color: white;
     grid-area: title;
-    font-size: 10vw;
+    font-size: 5vw;
     border: 3px solid black;
     background-image: url(Galaxy.jpg);
     /* max-width: 100%; needs img tag */
-    background-size: cover
+    background-size: cover;
     
 }
 .directory {
@@ -35,44 +36,109 @@ body {
     /* margin: 10px; */
    
 }
+
+a {
+    color: white;
+}
 .bio {
     color: white;
     text-align: center;
     grid-area: bio;
-    height: 300px;
+    height: 100%;
     border: 3px solid steelblue;
     border-radius: 1em;
-    margin: 3px;
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
+}
+
+div[class="bio"] > p {
+    padding: 20px;
+    font-size: xx-large;
+    padding-top: 10%;
 }
 .picture {
     grid-area: picture;
-    border: 3px solid steelblue;
+    /* border: 3px solid steelblue; */
     border-radius: 1em;
     margin: 3px;
+    height: 100%;
+}
+
+.resume {
+    grid-area: resume;
+    color: white;
+    border: 3px solid white;
+    height: 200px;
+    margin: 20px;
+    border: 3px solid steelblue;
+    border-radius: 1em;
+}
+
+.LN {
+    grid-area: LN;
+    height: 200px;
+    margin: 20px;
+    border: 3px solid steelblue;
+    border-radius: 1em;
+}
+
+img[src="linkedIn.png"] {
+    height: 150px;
+    position: relative;
+    left: 45%;
+    bottom: -10%;
+}
+img[src="resume1.png"] {
+    height: 150px;
+    position: relative;
+    left: 70%;
+    bottom: -10%;
+}
+img[src="GitHub-logo.jpg"] {
+    height: 150px;
+    position: relative;
+    left: -10%;
+    bottom: -10%;
 }
 .footer {
     grid-area: footer;
-    width: 500px;
-    justify-self: center;
-    /* border: 3px solid black; */
+    width: 100%;
+    background: rgb(70, 130, 180, 0.7);
+    margin-top: 20px;
+    padding-right: 2px;
 }
 ul {
     color: white;
-    background-color: black;
-    border: 5px solid steelblue;
-    padding: 2em;
     border-radius: 1em;
+    text-align: center;
+    list-style: none;
+    font-size: large;
+    margin: none;
   }
 
-  img[src="picture.jpg"] {
+  ul > div {
+    position: relative;
+    left: 350px;
+    width: 50%;
+    text-align: center;
+    font-size: larger;
+    border-bottom: 3px dashed white;
+    padding-right: 10px;
+    margin: 7px;
+  }
+
+  img[src="picture2.jpg"] {
       display: block;
       /* background-size: contain; */
+      margin: 10px;
+      max-height: 100%;
+      width: 350px;
+      align-self: center;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
-    
-      max-width: 200px;
+     bottom: 300px;
+     padding: 50px;
   }
 
 
